@@ -1,5 +1,5 @@
 {
-  "name": "gulp",
+  "name": "@bergsonmarq/gulp",
   "version": "4.0.2",
   "description": "The streaming build system.",
   "homepage": "https://gulpjs.com",
@@ -8,7 +8,13 @@
     "Eric Schoffstall <yo@contra.io>",
     "Blaine Bublitz <blaine.bublitz@gmail.com>"
   ],
-  "repository": "gulpjs/gulp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bergsonmarq/gulp"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@bergsonmarq"
+  },
   "license": "MIT",
   "engines": {
     "node": ">= 0.10"
@@ -30,8 +36,8 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "dependencies": {
-    "glob-watcher": "^5.0.3",
-    "gulp-cli": "^2.2.0",
+    "glob-watcher": "^6.0.0",
+    "gulp-cli": "git+https://github.com:bergsonmarq/gulp-cli.git#gulp_sso",
     "undertaker": "^1.2.1",
     "vinyl-fs": "^3.0.0"
   },
