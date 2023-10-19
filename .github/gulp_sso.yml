@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - gulp_sso
+      - master
 
 jobs:
   publish:
